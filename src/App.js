@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import List from "./List";
 import Alert from "./Alert";
 
@@ -20,6 +20,8 @@ function App() {
     msg: "",
     type: "",
   });
+  const inputContainer = useRef(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!task) {
@@ -47,6 +49,9 @@ function App() {
       setTask("");
     }
   };
+  useEffect(() => {
+    inputContainer.current.focus();
+  });
 
   const showAlert = (show = false, type = "", msg = "") => {
     setAlert({ show, type, msg });
@@ -81,6 +86,7 @@ function App() {
             placeholder="Enter your task here"
             value={task}
             onChange={(e) => setTask(e.target.value)}
+            ref={inputContainer}
           />
           <button type="submit" className="submit-btn">
             {isEditing ? "Edit" : "Add Task"}
