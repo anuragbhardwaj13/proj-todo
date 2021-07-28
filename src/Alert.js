@@ -1,14 +1,7 @@
 import React, { useEffect } from "react";
 
-const Alert = ({ type, msg, removeAlert, list }) => {
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      removeAlert();
-    }, 2000);
-    return () => clearTimeout(timeout);
-    //eslint-disable-next-line
-  }, [list]);
-  return <p className={`alert alert-${type}`}>{msg}</p>;
+const Alert = () => {
+  return <h3>ALert</h3>;
 };
 
 export default Alert;

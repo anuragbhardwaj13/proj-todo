@@ -58,8 +58,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -158,11 +158,7 @@ main {
   display: grid;
   place-items: center;
 }
-/*
-=============== 
-Grocery List
-===============
-*/
+
 .section-center {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -192,7 +188,7 @@ Grocery List
   color: #155724;
   background: #d4edda;
 }
-.grocery-form h3 {
+.form h3 {
   color: var(--clr-primary-1);
   margin-bottom: 1.5rem;
   text-align: center;
@@ -201,21 +197,7 @@ Grocery List
   display: flex;
   justify-content: center;
 }
-.grocery {
-  padding: 0.25rem;
-  padding-left: 1rem;
-  background: var(--clr-grey-10);
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
-  border-color: transparent;
-  font-size: 1rem;
-  flex: 1 0 auto;
-  color: var(--clr-grey-5);
-}
-.grocery::placeholder {
-  font-family: var(--ff-secondary);
-  color: var(--clr-grey-5);
-}
+
 .submit-btn {
   background: var(--clr-primary-8);
   border-color: transparent;
@@ -237,11 +219,11 @@ Grocery List
   color: var(--clr-white);
 }
 
-.grocery-container {
+.container {
   margin-top: 2rem;
 }
 
-.grocery-item {
+.item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -251,11 +233,11 @@ Grocery List
   border-radius: var(--radius);
   text-transform: capitalize;
 }
-.grocery-item:hover {
+.item:hover {
   color: var(--clr-grey-5);
   background: var(--clr-grey-10);
 }
-.grocery-item:hover .title {
+.item:hover .title {
   color: var(--clr-grey-5);
 }
 .title {
